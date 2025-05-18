@@ -4,7 +4,7 @@ import Link from 'next/link';
 const Navbar = ({ onBookNowClick }) => {
   return (
     <nav className="bg-[#1d241d] text-white px-8 py-4 flex items-center justify-between">
-      <div className="text-3xl font-bold">Crossfit Today</div>
+      <div className="text-3xl font-bold tracking-wide">CRIKFITONE</div>
 
       <div className=" md:flex gap-8 items-center text-sm font-semibold">
         <a href="/about" className="hover:text-gray-300 text-xl">ABOUT</a>

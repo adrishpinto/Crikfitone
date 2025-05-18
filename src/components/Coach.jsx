@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { FaInstagram, FaYoutube, FaFacebook, FaTwitter, FaGlobe } from 'react-icons/fa';
 import Image from 'next/image';
 
 
@@ -46,7 +45,7 @@ export default function Coach() {
           {expanded ? 'Read Less ▲' : 'Read More ▼'}
         </button>
 
-        <div className="mt-6 flex gap-6 text-xl text-gray-700">
+        {/* <div className="mt-6 flex gap-6 text-xl text-gray-700">
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
             <FaInstagram className="text-pink-500" />
           </a>
@@ -62,7 +61,7 @@ export default function Coach() {
           <a href="#" aria-label="Website">
             <FaGlobe className="text-green-600" />
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );
