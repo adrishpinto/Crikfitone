@@ -145,6 +145,10 @@ const Popup = ({ onClose }) => {
           </button>
         </form>
       </div>
+      {/* <div className="relative mt-1.5">
+                <div className="absolute left-[30%] opacity-70 bg-pink-900 w-[50vh] h-[50vh] mix-blend-multiply"></div>
+                <div className="absolute right-[30%] bg-yellow-400 opacity-60  w-[50vh] h-[50vh] mt-7 mx-auto mix-blend-multiply"></div>
+            </div> */}
     </div>
   );
 };
