@@ -1,38 +1,75 @@
 import Image from "next/image";
+import {MdChevronLeft, MdChevronRight} from "react-icons/md";
+import { useRef } from "react";
 
 const Coaches = () => {
+    const scrollRef = useRef(null);
+
+    const scrollLeft = () => {
+        if (scrollRef.current) {
+        scrollRef.current.scrollBy({ left: -375, behavior: "smooth" });
+        }
+    };
+
+    const scrollRight = () => {
+        if (scrollRef.current) {
+        scrollRef.current.scrollBy({ left: 375, behavior: "smooth" }); 
+        }
+    };
+
+
     return (  
-        <div className="mx-auto max-w-7xl  px-4 ">
-            <h1 className="text-4xl font-bold mt-6">OUR COACHES</h1>
-
-            <div className="mt-6 flex flex-wrap justify-center">
-                <div className=" flex-1 min-w-[100px] aspect-[4/3] ">
-                    <img src="/images/coach.jpg" alt="" className="w-full h-full object-cover" />
+        <div className="mx-16 max-w-7xl px-4 ">
+            <h1 className="text-4xl font-bold mt-6 ml-8">OUR COACHES</h1>
+            <div className="flex items-center">
+                <MdChevronLeft size={50} className="mr-2 cursor-pointer h-20 rounded-2xl bg-gray-300" onClick={scrollLeft}/>
+                <div className="overflow-x-scroll scrollbar-hide scroll-smooth" ref={scrollRef}>
+                    <div className="mt-6 flex flex-nowrap">
+                        <div className=" min-w-[366px] aspect-[4/3] ">
+                            <img src="/images/coach.jpg" alt="" className="w-full h-full object-cover" />
+                        </div>
+                        <div className=" min-w-[366px] aspect-[4/3]">
+                            <h2 className="text-xl font-semibold text-center mx-auto mt-12 ">Coach Name</h2>
+                            <div className="w-[60px] h-[2px] bg-red-300 mx-auto mt-1 rounded"></div>
+                            <p className="mt-6 w-fit mx-auto" >Description</p>
+                        </div>
+                        <div className="min-w-[366px] aspect-[4/3] ">
+                            <img src="/images/coach.jpg" alt="" className="w-full h-full object-cover" />
+                        </div>
+                        <div className="min-w-[366px] aspect-[4/3]">
+                            <h2 className="text-xl font-semibold text-center mx-auto mt-12 ">Coach Name</h2>
+                            <div className="w-[60px] h-[2px] bg-red-300 mx-auto mt-1 rounded"></div>
+                            <p className="mt-6 w-fit mx-auto" >Description</p>
+                        </div>
+                        <div className="min-w-[366px] aspect-[4/3] ">
+                            <img src="/images/coach.jpg" alt="" className="w-full h-full object-cover" />
+                        </div>
+                    </div>
+                    <div className="flex flex-nowrap">
+                        <div className="min-w-[366px] aspect-[4/3] ">
+                            <h2 className="text-xl font-semibold text-center mx-auto mt-12 ">Coach Name</h2>
+                            <div className="w-[60px] h-[2px] bg-red-300 mx-auto mt-1 rounded"></div>
+                            <p className="mt-6 w-fit mx-auto" >Description</p>
+                        </div>
+                        <div className="  min-w-[366px] aspect-[4/3] ">
+                             <img src="/images/coach.jpg" alt="" className="w-full h-full object-cover" />
+                        </div>
+                        <div className=" min-w-[366px] aspect-[4/3] ">
+                            <h2 className="text-xl font-semibold text-center mx-auto mt-12 ">Coach Name</h2>
+                            <div className="w-[60px] h-[2px] bg-red-300 mx-auto mt-1 rounded"></div>
+                            <p className="mt-6 w-fit mx-auto" >Description</p>
+                        </div>
+                        <div className="min-w-[366px] aspect-[4/3] ">
+                             <img src="/images/coach.jpg" alt="" className="w-full h-full object-cover" />
+                        </div>
+                        <div className="min-w-[366px] aspect-[4/3] ">
+                            <h2 className="text-xl font-semibold text-center mx-auto mt-12 ">Coach Name</h2>
+                            <div className="w-[60px] h-[2px] bg-red-300 mx-auto mt-1 rounded"></div>
+                            <p className="mt-6 w-fit mx-auto" >Description</p>
+                        </div>
+                    </div>
                 </div>
-                <div className="flex-1 min-w-[100px] aspect-[4/3]">
-                    <h2 className="text-xl font-semibold text-center mx-auto mt-12 ">Coach Name</h2>
-                    <div className="w-[60px] h-[2px] bg-red-300 mx-auto mt-1 rounded"></div>
-                    <p className="mt-6 w-fit mx-auto" >Description</p>
-                </div>  
-                <div className=" flex-1 min-w-[100px] aspect-[4/3] ">
-                    <img src="/images/coach.jpg" alt="" className="w-full h-full object-cover" />
-                </div>
-            </div>
-
-            <div className="flex flex-wrap justify-center">
-                <div className="flex-1 min-w-[100px] aspect-[4/3] ">
-                    <h2 className="text-xl font-semibold text-center mx-auto mt-12 ">Coach Name</h2>
-                    <div className="w-[60px] h-[2px] bg-red-300 mx-auto mt-1 rounded"></div>
-                    <p className="mt-6 w-fit mx-auto" >Description</p>
-                </div>
-                <div className=" flex-1 min-w-[100px] aspect-[4/3] ">
-                     <img src="/images/coach.jpg" alt="" className="w-full h-full object-cover" />
-                </div>
-                <div className=" flex-1 min-w-[100px] aspect-[4/3] ">
-                    <h2 className="text-xl font-semibold text-center mx-auto mt-12 ">Coach Name</h2>
-                    <div className="w-[60px] h-[2px] bg-red-300 mx-auto mt-1 rounded"></div>
-                    <p className="mt-6 w-fit mx-auto" >Description</p>
-                </div>
+                <MdChevronRight size={50} className="ml-2 cursor-pointer bg-gray-300 h-20 rounded-2xl"  onClick={scrollRight}/>
             </div>
         </div>
     );

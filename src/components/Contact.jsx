@@ -73,7 +73,7 @@ const Contact = () => {
                     <div className='py-2'>
                         <textarea name="" id="" 
                             placeholder='Your message ' 
-                            className='border-2 rounded w-full mt-4'
+                            className='border-2 rounded w-full mt-4 px-2'
                             value={message}
                             onChange={(e)=>{setMessage(e.target.value)}} >
                         </textarea><br />
