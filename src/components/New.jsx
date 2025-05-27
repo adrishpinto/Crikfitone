@@ -29,7 +29,7 @@ const New = () => {
                             <li className="text-gray-200 cursor-pointer hover:border-b-3 border-red-800 ">Home</li>
                             <li className="text-gray-200 cursor-pointer hover:border-b-4 border-red-800 ">About</li>
                             <li className="text-gray-200 cursor-pointer hover:border-b-4 border-red-800 ">Instagram</li>
-                            <li className="text-gray-200 cursor-pointer hover:border-b-4 border-red-800 ">Instagram</li>
+                            <li className="text-gray-200 cursor-pointer hover:border-b-4 border-red-800 ">Testimony</li>
                             <li className="text-gray-200 cursor-pointer hover:border-b-4 border-red-800 ">Contact Us</li>
                         </ul>
                     </nav>
@@ -40,7 +40,7 @@ const New = () => {
                 <h1>ALWAYS</h1>
                 <h1>DOMINATES</h1>
                 <button 
-                className="mt-5 text-3xl font-semibold w-fit mx-auto px-2 py-1 rounded-2xl hover:bg-gray-300  hover:text-black transition duration-300 cursor-pointer"
+                className="mt-5 text-2xl font-semibold w-fit mx-auto px-2 pb-1 border-white border-2 rounded-lg flex items-center justify-center hover:bg-gray-300  hover:text-black transition duration-300 cursor-pointer"
                 onClick={handleBookNowClick}>Book Now</button>
             </div>  
             <Learning/>
