@@ -33,10 +33,20 @@ const Learning = () => {
           description="A coach helps track and analyze a player’s performance through regular assessments and match feedback."
         />
         <LearningCard
-          imgSrc="/images/stadium.png"
-          title="Tournament Travel"
-          description="Tournament travel boosts adaptability by exposing players to diverse conditions and competition. It also strengthens team bonding and resilience through shared experiences."
+          imgSrc="/images/coach.png"
+          title="Certified Coaches"
+          description="Experienced coaches provide personalized training plans, expert guidance, and mentorship to help players reach their full potential."
         />
+        <LearningCard
+          imgSrc="/images/Camera.png"
+          title="Video Analysis"
+          description="Video analysis allows players to review their techniques, strategies, and performance in detail, leading to improved skills and game understanding."
+        />
+        <LearningCard
+          imgSrc="/images/group.png"
+          title="Group Yoga Classes"
+          description="Group yoga classes enhance flexibility, strength, and mental focus, providing a holistic approach to cricket training."
+         />
       </div>
     </div>
   );

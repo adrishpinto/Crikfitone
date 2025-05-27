@@ -4,6 +4,7 @@ import { useRef,useEffect } from "react";
 
 const Coaches = () => {
   const scrollRef = useRef(null);
+  const scrollCount = useRef(0);
 
   const scrollLeft = () => {
     if (scrollRef.current) {
@@ -20,23 +21,21 @@ const Coaches = () => {
     }
   };
 
-// useEffect(() => {
-//   const interval = setInterval(() => {
-//     if (scrollRef.current) {
-//       const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
+useEffect(() => {
+  const interval = setInterval(() => {
+    if (scrollRef.current) {
+      if (scrollCount.current >= 2) {
+        scrollRef.current.scrollTo({ left: 0, behavior: "smooth" });
+        scrollCount.current = 0;
+      } else {
+        scrollRight();
+        scrollCount.current += 1;
+      }
+    }
+  }, 5000);
 
-//       // If reached end, reset
-//       if (scrollLeft + clientWidth >= scrollWidth) {
-//         scrollRef.current.scrollTo({ left: 0, behavior: "smooth" });
-//       } else {
-//         scrollRef.current.scrollBy({ left: 370, behavior: "smooth" });
-//       }
-//     }
-//   }, 5000);
-
-//   return () => clearInterval(interval); // clean up
-// }, []);
-
+  return () => clearInterval(interval);
+}, []);
   return (
     <div className=" w-[90vw] mx-auto px-4">
       <h1 className="text-4xl font-bold mt-6 ml-8">OUR COACHES</h1>
