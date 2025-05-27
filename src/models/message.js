@@ -2,7 +2,8 @@ import mongoose from 'mongoose';
 
 const MessageSchema = new mongoose.Schema({
   name: String,
-  email: String,
+  countryCode: String,
+  phoneNumber: String,
   message: String,
 }, { timestamps: true });
 

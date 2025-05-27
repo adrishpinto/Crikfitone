@@ -82,21 +82,6 @@ const Popup = ({ onClose }) => {
 
           <div>
             <label className="font-semibold">
-              Email <span className="text-red-500">*</span>
-            </label>
-            <input
-              type="email"
-              name="email"
-              className="w-full border rounded p-2"
-              placeholder="Enter Email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-            />
-          </div>
-
-          <div>
-            <label className="font-semibold">
               Phone <span className="text-red-500">*</span>
             </label>
             <div className="flex">
