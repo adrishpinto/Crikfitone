@@ -7,6 +7,16 @@ const Navbar = () => {
   const handleBookNowClick = () => setShowPopup(true);
   const handleClosePopup = () => setShowPopup(false);
 
+  const NavItem = (props) => {
+    return (
+      <li className="cta">
+        <button className="text-gray-200 cursor-pointer hover-underline-animation">
+          {props.name}
+        </button>
+      </li>
+    );
+  };
+
   return (
     <div>
       <div className="relative h-[100vh] w-full overflow-hidden ">
@@ -24,22 +34,12 @@ const Navbar = () => {
 
         <div className="absolute top-6 right-15 text-2xl">
           <nav className="">
-            <ul className="flex space-x-7">
-              <li className="text-gray-200 cursor-pointer hover:border-b-3 border-red-800 ">
-                Home
-              </li>
-              <li className="text-gray-200 cursor-pointer hover:border-b-4 border-red-800 ">
-                About
-              </li>
-              <li className="text-gray-200 cursor-pointer hover:border-b-4 border-red-800 ">
-                Instagram
-              </li>
-              <li className="text-gray-200 cursor-pointer hover:border-b-4 border-red-800 ">
-                Testimony
-              </li>
-              <li className="text-gray-200 cursor-pointer hover:border-b-4 border-red-800 ">
-                Contact Us
-              </li>
+            <ul className="flex space-x-7 tracking-tight font-normal text-2xl">
+              <NavItem name="Home" />
+              <NavItem name="About" />
+              <NavItem name="Gallery" />
+              <NavItem name="Services" />
+              <NavItem name="Contact Us" />
             </ul>
           </nav>
         </div>

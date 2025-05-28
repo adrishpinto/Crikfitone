@@ -2,7 +2,7 @@ const LearningCard = ({ title, description, imgSrc }) => {
   return (
     <div className="w-1/2 mt-7 px-4">
       <img src={imgSrc} alt="icon" className="w-[70px] h-[50px] ml-4" />
-      <h2 className="font-semibold text-sm mt-2">{title}</h2>
+      <h2 className="font-bold tracking-wider text-sm mt-2">{title}</h2>
       <p className="mt-1">{description}</p>
     </div>
   );

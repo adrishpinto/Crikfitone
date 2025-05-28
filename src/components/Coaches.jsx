@@ -5,7 +5,7 @@ import { useRef, useEffect } from "react";
 const Coaches = () => {
   return (
     <div className="p-8 mt-20">
-      <h2 className="text-4xl font-extrabold text-cyan-700 mb-6 border-b-4 border-cyan-500 pb-2">
+      <h2 className="text-4xl font-extrabold text-cyan-900 mb-6 border-b-4 border-cyan-500 pb-2">
         Our Coaches
       </h2>
       <p className="mb-10 text-lg text-gray-800 font-medium">
@@ -38,7 +38,7 @@ const Coaches = () => {
             integrity, helping young athletes grow both on and off the field.
           </p>
           <p className="text-cyan-800 font-semibold mb-2">Certifications:</p>
-          <ul className="list-disc list-inside text-gray-600 font-[300] font-[300] space-y-1">
+          <ul className="list-disc list-inside text-gray-600 font-[300] space-y-1">
             <li>MSDCA Level 1 Cricket Coaching</li>
             <li>ASCA Level 1 (Strength & Conditioning – Australia)</li>
             <li>ICC Foundation Certificate</li>
