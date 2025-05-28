@@ -10,10 +10,10 @@ const LearningCard = ({ title, description, imgSrc }) => {
 
 const Learning = () => {
   return (
-    <div className="mx-26 mt-6 p-6">
+    <div className=" mt-6 p-6">
       <div className="text-4xl font-bold">
-        <h1>Advantage</h1>
-        <h1>Learning</h1>
+        <h1 className="text-4xl font-extrabold">Advantage Learning</h1>
+        <div className="h-1 bg-slate-600 mt-4"></div>
       </div>
 
       <div className="flex flex-wrap">
@@ -46,7 +46,7 @@ const Learning = () => {
           imgSrc="/images/group.png"
           title="Group Yoga Classes"
           description="Group yoga classes enhance flexibility, strength, and mental focus, providing a holistic approach to cricket training."
-         />
+        />
       </div>
     </div>
   );

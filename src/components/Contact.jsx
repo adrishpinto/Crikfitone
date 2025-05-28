@@ -35,8 +35,8 @@ const Contact = () => {
   };
 
     return (  
-        <div className="my-10 flex w-[80vw] mx-auto">
-            <div className="w-1/2">
+        <div className="my-10 flex justify-between mx-auto w-[90%]">
+            <div className="">
                 <h1 className='font-semibold text-xl ml-2'>CONTACT US</h1>
                 <div className='flex flex-col-2'>
                     <MapPinIcon className="h-16 w-6" />
@@ -53,7 +53,7 @@ const Contact = () => {
                 </div>
                 
             </div>
-            <div className="w-1/2">
+            <div className="">
                 <h1 className='font-semibold text-xl'>LEAVE A MESSAGE</h1>
                 <div className='py-4 '>
                     <div className='flex mr-2'>

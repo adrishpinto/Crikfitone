@@ -1,10 +1,9 @@
-import New from '@/components/New';
+import Main from "@/components/Main";
 
 export default function HomePage() {
-
   return (
     <>
-      <New/>
+      <Main />
     </>
   );
 }
