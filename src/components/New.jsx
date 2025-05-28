@@ -20,7 +20,7 @@ const New = () => {
             />
                 {showPopup && <Popup onClose={handleClosePopup} />}
                 <div className="absolute top-0">
-                    <h1 className="mt-5 ml-4 text-5xl font-bold text-gray-200 cursor-pointer">Crickfitone</h1>
+                    <h1 className="mt-5 ml-4 text-5xl font-bold text-gray-200 cursor-pointer">Crikfitone</h1>
                 </div>
 
                 <div className="absolute top-6 right-15 text-2xl">

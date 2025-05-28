@@ -56,47 +56,46 @@ const Contact = () => {
             <div className="w-1/2">
                 <h1 className='font-semibold text-xl'>LEAVE A MESSAGE</h1>
                 <div className='py-4 '>
-                    <div className='flex flex-col mr-2'>
-                        <div className='flex'>
-                            <input type="text"
-                                placeholder='Name'
-                                className='border px-2 py-1 rounded-l'
-                                value={name}
-                                onChange={(e) => setName(e.target.value)}
-                            />
-                            <div className="flex">
-                                <select
-                                    name="countryCode"
-                                    className="border rounded-l px-2 py-1 ml-4"
-                                    value={countryCode}
-                                    onChange={(e) => setCountryCode(e.target.value)}
-                                >
-                                    <option value="+91">+91 India</option>
-                                    <option value="+1">+1 USA</option>
-                                    <option value="+44">+44 UK</option>
-                                </select>
+                    <div className='flex mr-2'>
+                        <div className="flex flex-col" >
+                            <div className='flex'>
                                 <input type="text"
-                                    placeholder='Phone Number'
-                                    className='border  px-2 py-1 rounded-r w-full'
-                                    value={phoneNumber}
-                                    onChange={(e) => setPhoneNumber(e.target.value)}
+                                    placeholder='Name'
+                                    className='border px-2 py-1 rounded-l'
+                                    value={name}
+                                    onChange={(e) => setName(e.target.value)}
                                 />
+                                    <select
+                                        name="countryCode"
+                                        className="border rounded-l px-2 py-1 ml-4"
+                                        value={countryCode}
+                                        onChange={(e) => setCountryCode(e.target.value)}
+                                    >
+                                        <option value="+91">+91 India</option>
+                                        <option value="+1">+1 USA</option>
+                                        <option value="+44">+44 UK</option>
+                                    </select>
+                                    <input type="text"
+                                        placeholder='Phone Number'
+                                        className='border  px-2 py-1 rounded-r w-full'
+                                        value={phoneNumber}
+                                        onChange={(e) => setPhoneNumber(e.target.value)}
+                                    />     
+                            </div>
+                                <div className='py-2'>
+                                <textarea name="" id="" 
+                                    placeholder='Your message ' 
+                                    className='border rounded-l w-full mt-4 px-2 py-1'
+                                    value={message}
+                                    onChange={(e)=>{setMessage(e.target.value)}} >
+                                </textarea><br />
+                                <button 
+                                onClick={handleSubmit}
+                                className='border-1 px-3 rounded-2xl mt-3 hover:bg-black hover:text-white cursor-pointer transition duration-300 '>
+                                Send</button>
                             </div>
                         </div>
-                        <div className='py-2'>
-                        <textarea name="" id="" 
-                            placeholder='Your message ' 
-                            className='border rounded-l w-full mt-4 px-2 py-1'
-                            value={message}
-                            onChange={(e)=>{setMessage(e.target.value)}} >
-                        </textarea><br />
-                        <button 
-                        onClick={handleSubmit}
-                        className='border-1 px-3 rounded-2xl mt-3 hover:bg-black hover:text-white cursor-pointer transition duration-300 '>
-                        Send</button>
-                    </div>
-                    </div>
-                    
+                    </div>    
                 </div>
             </div>
         </div>
