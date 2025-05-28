@@ -33,7 +33,7 @@ const Learning = () => {
           description="A coach helps track and analyze a player’s performance through regular assessments and match feedback."
         />
         <LearningCard
-          imgSrc="/images/coach.png"
+          imgSrc="/images/certificate.png"
           title="Certified Coaches"
           description="Experienced coaches provide personalized training plans, expert guidance, and mentorship to help players reach their full potential."
         />

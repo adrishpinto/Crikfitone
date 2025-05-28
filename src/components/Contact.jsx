@@ -35,7 +35,7 @@ const Contact = () => {
   };
 
     return (  
-        <div className="my-10 flex mx-26">
+        <div className="my-10 flex w-[80vw] mx-auto">
             <div className="w-1/2">
                 <h1 className='font-semibold text-xl ml-2'>CONTACT US</h1>
                 <div className='flex flex-col-2'>
@@ -61,13 +61,13 @@ const Contact = () => {
                             <div className='flex'>
                                 <input type="text"
                                     placeholder='Name'
-                                    className='border px-2 py-1 rounded-l'
+                                    className='border px-2 py-1 rounded outline-none hover:border-blue-400 focus:border-blue-700 focus:bg-slate-50 '
                                     value={name}
                                     onChange={(e) => setName(e.target.value)}
                                 />
                                     <select
                                         name="countryCode"
-                                        className="border rounded-l px-2 py-1 ml-4"
+                                        className="border rounded-l px-2 py-1 ml-4 outline-none hover:border-blue-400 focus:border-blue-700 focus:bg-slate-50"
                                         value={countryCode}
                                         onChange={(e) => setCountryCode(e.target.value)}
                                     >
@@ -77,7 +77,7 @@ const Contact = () => {
                                     </select>
                                     <input type="text"
                                         placeholder='Phone Number'
-                                        className='border  px-2 py-1 rounded-r w-full'
+                                        className='border  px-2 py-1 rounded-r w-full outline-none hover:border-blue-400 focus:border-blue-700 focus:bg-slate-50'
                                         value={phoneNumber}
                                         onChange={(e) => setPhoneNumber(e.target.value)}
                                     />     
@@ -85,13 +85,13 @@ const Contact = () => {
                                 <div className='py-2'>
                                 <textarea name="" id="" 
                                     placeholder='Your message ' 
-                                    className='border rounded-l w-full mt-4 px-2 py-1'
+                                    className='border rounded w-full mt-4 px-2 py-1 outline-none hover:border-blue-400 focus:border-blue-700 focus:bg-slate-50'
                                     value={message}
                                     onChange={(e)=>{setMessage(e.target.value)}} >
                                 </textarea><br />
                                 <button 
                                 onClick={handleSubmit}
-                                className='border-1 px-3 rounded-2xl mt-3 hover:bg-black hover:text-white cursor-pointer transition duration-300 '>
+                                className='border-1 px-3 rounded-lg mt-3 hover:bg-black hover:text-white cursor-pointer transition duration-300 '>
                                 Send</button>
                             </div>
                         </div>
