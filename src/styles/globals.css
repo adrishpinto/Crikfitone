@@ -49,3 +49,11 @@
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+@font-face {
+  font-family: 'DrukWideBold';
+  src: url('./font/Druk-Wide-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
