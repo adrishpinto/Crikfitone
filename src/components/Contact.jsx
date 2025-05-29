@@ -1,5 +1,6 @@
-import { MapPinIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
+import { FaInstagram , FaWhatsapp , FaEnvelope , FaPhone} from "react-icons/fa";
+import { MdPhone } from "react-icons/md";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -37,17 +38,40 @@ const Contact = () => {
   return (
     <div className="my-10 flex justify-between mx-auto w-[90%]">
       <div className="">
-        <h1 className="font-semibold text-xl ml-2">CONTACT US</h1>
-        <div className="flex flex-col-2">
-          <MapPinIcon className="h-16 w-6" />
-          <div className="w-full p-4">
-            <div>
-              <h1>Address Information</h1>
-              <p className="text-sm">123 Main Street, City, Country</p>
+        <h1 className="font-semibold text-xl  ">CONTACT US</h1>
+        <div className="flex flex-col-2 ml-2">
+          <div className="w-full py-4">
+            <div className="mt-2">
+              <div className="flex items-center ">
+                <MdPhone className="transform scale-y-[-1]" size={20} />  
+                <h1 className="w-full ml-2 ">Phone Number</h1>
+              </div> 
+              <a className="text-sm block mt-2 mx-2">+ 123 456 7890</a>
             </div>
-            <div className="mt-10">
-              <h1 className="w-full">Phone Number</h1>
-              <p className="text-sm">+123 456 7890</p>
+            <div className="mt-4">
+              <div className="flex items-center">
+                <FaEnvelope className="text-blue-500" />
+                <h1 className="w-full ml-2 ">Mail</h1>
+              </div> 
+              <a className="text-sm block mt-2 mx-2 cursor-pointer"
+                href="mailto:ujjwaltiga1234@gmail.com"
+              >xyz@gmail.com</a>
+            </div>
+            <div className="mt-4">
+              <div className="flex items-center mt-2">
+                <FaWhatsapp className="text-green-500" />
+                <h1 className="w-full ml-2">WhatsApp</h1>
+              </div> 
+              <a className="text-sm block mt-2 mx-2 text-green-600"
+              href="https://wa.me/7406467941">Coach Name</a>
+            </div>
+            <div className="mt-4">
+              <div className="flex items-center mt-2">
+                <FaInstagram className="text-pink-600" />
+                <h1 className="w-full ml-2">Instagram</h1>
+              </div> 
+              <a className="text-sm block mt-2 mx-2 text-pink-500" 
+              href="https://www.instagram.com/yourusername " >@Crilfitone</a>
             </div>
           </div>
         </div>
@@ -67,13 +91,13 @@ const Contact = () => {
                 />
                 <select
                   name="countryCode"
-                  className="border border-r-0 rounded-l px-2 py-1 ml-4 outline-none hover:border-blue-400 focus:border-blue-700 focus:bg-slate-50"
+                  className="border border-r-0 rounded-l px-2 py-1 ml-4 w-fit outline-none hover:border-blue-400 focus:border-blue-700 focus:bg-slate-50"
                   value={countryCode}
                   onChange={(e) => setCountryCode(e.target.value)}
                 >
-                  <option value="+91">+91 India</option>
-                  <option value="+1">+1 USA</option>
-                  <option value="+44">+44 UK</option>
+                  <option value="+91">+91</option>
+                  <option value="+1">+1</option>
+                  <option value="+44">+44</option>
                 </select>
                 <input
                   type="text"
@@ -99,7 +123,7 @@ const Contact = () => {
                 <br />
                 <button
                   onClick={handleSubmit}
-                  className="border-1 px-3 rounded-lg mt-3 hover:bg-black hover:text-white cursor-pointer transition duration-300 "
+                  className="text-white mt-5 bg-cyan-400 hover:bg-blue-700 px-4 pb-1 rounded-lg transition duration-300 cursor-pointer text-[18px]"
                 >
                   Send
                 </button>

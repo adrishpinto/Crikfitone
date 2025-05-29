@@ -87,13 +87,13 @@ const Popup = ({ onClose }) => {
             <div className="flex">
               <select
                 name="countryCode"
-                className="border rounded-l p-2"
+                className="border rounded-l p-2 w-fit"
                 value={formData.countryCode}
                 onChange={handleChange}
               >
-                <option value="+91">+91 India</option>
-                <option value="+1">+1 USA</option>
-                <option value="+44">+44 UK</option>
+                <option value="+91">+91</option>
+                <option value="+1">+1</option>
+                <option value="+44">+44</option>
               </select>
               <input
                 type="tel"

@@ -61,7 +61,7 @@ const Coaches = () => {
             character building.
           </p>
           <p className="text-cyan-700 font-semibold mb-2">Certifications:</p>
-          <ul className="list-disc list-inside text-gray-600 font-[300] font-[300] space-y-1">
+          <ul className="list-disc list-inside text-gray-600 font-[300] space-y-1">
             <li>Level O & A Cricket Coaching</li>
             <li>B.A. in Physical Education (Cricket Specialization)</li>
           </ul>
