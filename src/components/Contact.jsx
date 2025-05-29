@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { FaInstagram , FaWhatsapp , FaEnvelope , FaPhone} from "react-icons/fa";
+import { FaInstagram, FaWhatsapp, FaEnvelope, FaPhone } from "react-icons/fa";
+import CoachesImg from "./CoachesImg";
 import { MdPhone } from "react-icons/md";
 
 const Contact = () => {
@@ -43,35 +44,47 @@ const Contact = () => {
           <div className="w-full py-4">
             <div className="mt-2">
               <div className="flex items-center ">
-                <MdPhone className="transform scale-y-[-1]" size={20} />  
-                <h1 className="w-full ml-2 ">Phone Number</h1>
-              </div> 
-              <a className="text-sm block mt-2 mx-2">+ 123 456 7890</a>
+                <MdPhone className="transform scale-y-[-1]" size={20} />
+                <h1 className="w-full ml-1 ">Phone Number</h1>
+              </div>
+              <a className="text-sm block mt- mx-2">+ 123 456 7890</a>
             </div>
-            <div className="mt-4">
+            <div className="mt-6">
               <div className="flex items-center">
                 <FaEnvelope className="text-blue-500" />
-                <h1 className="w-full ml-2 ">Mail</h1>
-              </div> 
-              <a className="text-sm block mt-2 mx-2 cursor-pointer"
+                <h1 className="w-full ml-1 ">Mail</h1>
+              </div>
+              <a
+                className="text-sm block mt- mx-2 cursor-pointer"
                 href="mailto:ujjwaltiga1234@gmail.com"
-              >xyz@gmail.com</a>
+              >
+                xyz@gmail.com
+              </a>
             </div>
-            <div className="mt-4">
+            <div className="mt-6">
               <div className="flex items-center mt-2">
                 <FaWhatsapp className="text-green-500" />
-                <h1 className="w-full ml-2">WhatsApp</h1>
-              </div> 
-              <a className="text-sm block mt-2 mx-2 text-green-600"
-              href="https://wa.me/7406467941">Coach Name</a>
+                <h1 className="w-full ml-1">WhatsApp</h1>
+              </div>
+              <a
+                className="text-sm block mt mx-2 text-green-600"
+                href="https://wa.me/9902884066"
+                target="_blank"
+              >
+                Unni Williams
+              </a>
             </div>
-            <div className="mt-4">
+            <div className="mt-6">
               <div className="flex items-center mt-2">
                 <FaInstagram className="text-pink-600" />
-                <h1 className="w-full ml-2">Instagram</h1>
-              </div> 
-              <a className="text-sm block mt-2 mx-2 text-pink-500" 
-              href="https://www.instagram.com/yourusername " >@Crilfitone</a>
+                <h1 className="w-full ml-1">Instagram</h1>
+              </div>
+              <a
+                className="text-sm block mt mx-2 text-pink-500"
+                href="https://www.instagram.com/yourusername "
+              >
+                @Crilfitone
+              </a>
             </div>
           </div>
         </div>

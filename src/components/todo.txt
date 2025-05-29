@@ -1,0 +1,9 @@
+Crossfit layout for hero-
+Cricket Specific 1:1 Training | Elite Human Performance | Group Fitness Sessions | Strength & Conditioning - text animation
+Crickfit - change font
+
+Navbar should stick
+Image should be below Navbar
+C1 on navbar
+
+Add Coaches details (3rd)

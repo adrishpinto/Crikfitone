@@ -38,7 +38,7 @@ const Navbar = () => {
               <NavItem name="Home" />
               <NavItem name="About" />
               <NavItem name="Gallery" />
-              <NavItem name="Services" />
+              <NavItem name="Events" />
               <NavItem name="Contact Us" />
             </ul>
           </nav>
