@@ -34,10 +34,10 @@ const Coaches = () => {
               10+ years of playing
             </span>{" "}
             experience.{" "}
-            <p>
+            <span className="block">
               He brings a player-first, development-focused approach to cricket
               coaching.
-            </p>{" "}
+            </span>{" "}
             He emphasizes skill-building, fitness, and integrity, helping young
             athletes grow both on and off the field.
           </p>
