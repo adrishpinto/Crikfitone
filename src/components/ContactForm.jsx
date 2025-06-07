@@ -98,13 +98,13 @@ const Contact = () => {
                 <input
                   type="text"
                   placeholder="Name"
-                  className="border px-2 py-1 rounded outline-none hover:border-blue-400 focus:border-blue-700 focus:bg-slate-50 "
+                  className="border px-2 py-1 rounded outline-none hover:border-blue-400 focus:border-blue-700 "
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                 />
                 <select
                   name="countryCode"
-                  className="border border-r-0 rounded-l px-2 py-1 ml-4 w-fit outline-none hover:border-blue-400 focus:border-blue-700 focus:bg-slate-50"
+                  className="border border-r-0 rounded-l px-2 py-1 ml-4 w-fit outline-none hover:border-blue-400 focus:border-blue-700"
                   value={countryCode}
                   onChange={(e) => setCountryCode(e.target.value)}
                 >
@@ -115,7 +115,7 @@ const Contact = () => {
                 <input
                   type="text"
                   placeholder="Phone Number"
-                  className="border px-2 py-1 rounded-r w-full outline-none hover:border-blue-400 focus:border-blue-700 focus:bg-slate-50"
+                  className="border px-2 py-1 rounded-r w-full outline-none hover:border-blue-400 focus:border-blue-700"
                   value={phoneNumber}
                   onChange={(e) => setPhoneNumber(e.target.value)}
                 />
@@ -127,7 +127,7 @@ const Contact = () => {
                   placeholder="Your message "
                   rows={8}
                   draggable="false"
-                  className="border rounded resize-none w-full mt-4 px-2 py-1 outline-none hover:border-blue-400 focus:border-blue-700 focus:bg-slate-50"
+                  className="border rounded resize-none w-full mt-4 px-2 py-1 outline-none hover:border-blue-400 focus:border-blue-700"
                   value={message}
                   onChange={(e) => {
                     setMessage(e.target.value);
@@ -136,7 +136,7 @@ const Contact = () => {
                 <br />
                 <button
                   onClick={handleSubmit}
-                  className="text-white mt-5 bg-cyan-400 hover:bg-blue-700 px-4 pb-1 rounded-lg transition duration-300 cursor-pointer text-[18px]"
+                  className="text-white mt-5 bg-blue-700 hover:bg-blue-800 px-4 rounded-lg transition duration-300 cursor-pointer text-[18px]"
                 >
                   Send
                 </button>

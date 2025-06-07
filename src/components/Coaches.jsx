@@ -5,7 +5,7 @@ import { useRef, useEffect } from "react";
 const Coaches = () => {
   return (
     <div className="p-8 mt-20">
-      <h2 className="text-4xl font-extrabold text-cyan-900 mb-6 border-b-4 border-cyan-500 pb-2" >
+      <h2 className="text-4xl font-extrabold text-cyan-900 mb-6 border-b-4 border-cyan-500 pb-2">
         Our Coaches
       </h2>
       <p className="mb-10 text-lg text-gray-800 font-medium">
